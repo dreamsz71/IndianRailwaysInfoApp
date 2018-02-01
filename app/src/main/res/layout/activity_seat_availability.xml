@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.pushkarnayouth.mytraindemo.SeatAvailabilityActivity">
+
+    <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/trainimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:textColor="#fff"
+        app:srcCompat="@mipmap/rlogo" />
+
+    <EditText
+        android:id="@+id/trainnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Train number" />
+
+    <AutoCompleteTextView
+        android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/trainnumber"
+        android:layout_below="@+id/trainnumber"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Source Station" />
+
+    <AutoCompleteTextView
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/source"
+        android:layout_below="@+id/source"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Destination Station" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/destination"
+        android:layout_below="@+id/destination"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Date" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/date"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="13dp" />
+
+
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:radius="10dp"
+        android:text="Check Availability"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

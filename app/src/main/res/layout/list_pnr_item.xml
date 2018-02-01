@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/pnr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Pnr Code: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtPnrCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/pnr"
+            android:layout_toRightOf="@+id/pnr"
+            android:hint="pnr"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/jDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pnr"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Journey Date: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtDoj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pnr"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/jDate"
+            android:layout_toRightOf="@+id/jDate"
+            android:hint="j date"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/Passengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jDate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Total Passengers: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtTotalPassengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jDate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/Passengers"
+            android:layout_toRightOf="@+id/Passengers"
+            android:hint="count"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/ChartPrepared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTotalPassengers"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Chart Prepared: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtChartPrepared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTotalPassengers"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/ChartPrepared"
+            android:layout_toRightOf="@+id/ChartPrepared"
+            android:hint="Chart"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/FromStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChartPrepared"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="From: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtFromStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChartPrepared"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/FromStation"
+            android:layout_toRightOf="@+id/FromStation"
+            android:hint="From"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/ToStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FromStation"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="To Station: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtToStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FromStation"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/ToStation"
+            android:layout_toRightOf="@+id/ToStation"
+            android:hint="to"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/BoardingPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ToStation"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Boarding Point: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtBoardingPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ToStation"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/BoardingPoint"
+            android:layout_toRightOf="@+id/BoardingPoint"
+            android:hint="B P"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/ReservationUpto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BoardingPoint"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Reservation Upto: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtReservationUpto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BoardingPoint"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/ReservationUpto"
+            android:layout_toRightOf="@+id/ReservationUpto"
+            android:hint="R U"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/tName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ReservationUpto"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Train Name: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ReservationUpto"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/tName"
+            android:layout_toRightOf="@+id/tName"
+            android:hint="T Name"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/tCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tName"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="Train Code: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtTrainCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tName"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/tCode"
+            android:layout_toRightOf="@+id/tCode"
+            android:hint="t code"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/JourneyClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTrainCode"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Journey Class: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtJourneyClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTrainCode"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/JourneyClass"
+            android:layout_toRightOf="@+id/JourneyClass"
+            android:hint="Journey Class"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"></TextView>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/displayPassengers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JourneyClass"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

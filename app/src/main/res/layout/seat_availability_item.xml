@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:text="Train: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/trainName"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/trainNumber"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:text="Date: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showDate"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="Class: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showClass"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:text="Status: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showStatus"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

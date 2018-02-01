@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="69dp"
+                android:paddingBottom="25dp"
+                android:paddingRight="25dp"
+                app:srcCompat="@mipmap/rlogo" />
+
+            <TextView
+                android:id="@+id/trainname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/imageView"
+                android:layout_marginTop="31dp"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Srcname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Destname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Src_depttime"
+                android:layout_alignStart="@+id/Src_depttime"
+                android:layout_below="@+id/Src_depttime"
+                android:layout_marginTop="17dp"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Src_depttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Srcname"
+                android:layout_alignStart="@+id/Srcname"
+                android:layout_below="@+id/Srcname"
+                android:layout_marginTop="17dp"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Dest_arivaltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Src_depttime"
+                android:layout_alignStart="@+id/Src_depttime"
+                android:layout_below="@+id/Destname"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="17dp"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Dest_arivaltime"
+                android:layout_margin="6dp"
+                android:background="@android:color/black"
+                android:stretchColumns="7">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/Monday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:padding="3dip"
+                        android:text="Monday"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/Tuesday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:padding="3dip"
+                        android:text="Tuesday"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/Wednesday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:padding="3dip"
+                        android:text="Wednesday"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/Thursday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:padding="3dip"
+                        android:text="Thursday"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/Friday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:padding="3dip"
+                        android:text="Friday"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/Saturday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:padding="3dip"
+                        android:text="Saturday"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/Sunday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:padding="3dip"
+                        android:text="Sunday"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:text="Tex"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:text="Tex"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/w"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:text="Tex"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/th"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:text="Tex"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:text="Tex"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/sa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:text="Tex"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+
+                    <TextView
+                        android:id="@+id/su"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@android:color/white"
+                        android:text="Tex"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="11.5dp" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <!--<TextView
+                android:id="@+id/m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/t"
+                android:layout_alignStart="@+id/t"
+                android:layout_below="@+id/Dest_arivaltime"
+                android:layout_marginTop="17dp"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Tuesday"
+                android:layout_alignBottom="@+id/Tuesday"
+                android:layout_alignLeft="@+id/w"
+                android:layout_alignStart="@+id/w"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Wednesday"
+                android:layout_alignBottom="@+id/Wednesday"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/Wednesday"
+                android:layout_toRightOf="@+id/Wednesday"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/th"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Thursday"
+                android:layout_alignBottom="@+id/Thursday"
+                android:layout_alignLeft="@+id/w"
+                android:layout_alignStart="@+id/w"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/Monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/m"
+                android:layout_alignBottom="@+id/m"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignStart="@+id/imageView"
+                android:text="Monday"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/Tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Monday"
+                android:layout_alignStart="@+id/Monday"
+                android:layout_below="@+id/Monday"
+                android:layout_marginTop="20dp"
+                android:text="Tuesday"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/Wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Tuesday"
+                android:layout_alignStart="@+id/Tuesday"
+                android:layout_below="@+id/Tuesday"
+                android:layout_marginTop="20dp"
+                android:text="Wednesday"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/Thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Wednesday"
+                android:layout_alignStart="@+id/Wednesday"
+                android:layout_below="@+id/Wednesday"
+                android:layout_marginTop="20dp"
+                android:text="Thursday"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/th"
+                android:layout_alignStart="@+id/th"
+                android:layout_alignTop="@+id/Friday"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/sa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Saturday"
+                android:layout_alignBottom="@+id/Saturday"
+                android:layout_alignLeft="@+id/f"
+                android:layout_alignStart="@+id/f"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/su"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sa"
+                android:layout_alignStart="@+id/sa"
+                android:layout_alignTop="@+id/Sunday"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/Friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Thursday"
+                android:layout_alignStart="@+id/Thursday"
+                android:layout_below="@+id/Thursday"
+                android:layout_marginTop="20dp"
+                android:text="Friday"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/Saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/Tuesday"
+                android:layout_alignRight="@+id/Tuesday"
+                android:layout_below="@+id/Friday"
+                android:layout_marginTop="20dp"
+                android:text="Saturday"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/Sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Friday"
+                android:layout_alignStart="@+id/Friday"
+                android:layout_below="@+id/Saturday"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Sunday"
+                android:textColor="@android:color/background_dark" />-->
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</HorizontalScrollView>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Indian Railways Info App</string>
+    <string name="stn">Station :</string>
+    <string name="train_number">train number</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+    <string name="seat_availability">Seat Availability</string>
+
+</resources>

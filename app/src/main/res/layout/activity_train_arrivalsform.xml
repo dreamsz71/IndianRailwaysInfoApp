@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+
+    <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/trainimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:textColor="#fff"
+        app:srcCompat="@mipmap/rlogo"
+
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextStationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/trainimage"
+        android:layout_margin="15dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Enter Station code" />
+
+    <Spinner
+        android:id="@+id/spinnerHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnAShow"
+        android:layout_alignStart="@+id/btnAShow"
+        android:layout_below="@+id/editTextStationCode"
+        android:layout_margin="15dp"
+        android:textColor="#fff">
+
+    </Spinner>
+
+
+    <Button
+        android:id="@+id/btnAShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerHours"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:radius="10dp"
+        android:text="Show Arrivals"
+        android:textColor="@color/purple"
+        android:textSize="12sp"
+        android:textStyle="bold">
+
+    </Button>
+</RelativeLayout>
